@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Showcase — Support</title>
+<style>
+  :root { --bg:#0e0f12; --card:#17181c; --fg:#f2f2f4; --muted:#9a9aa3; --accent:#a4eb3f; }
+  @media (prefers-color-scheme: light) {
+    :root { --bg:#fafafa; --card:#ffffff; --fg:#111114; --muted:#666670; --accent:#6fae12; }
+  }
+  * { margin:0; box-sizing:border-box; }
+  body { background:var(--bg); color:var(--fg); font:17px/1.65 -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+         display:flex; justify-content:center; padding:48px 20px; }
+  main { max-width:640px; width:100%; }
+  h1 { font-size:2.1rem; letter-spacing:-0.02em; margin-bottom:4px; }
+  .tag { color:var(--muted); margin-bottom:40px; }
+  h2 { font-size:1.15rem; margin:36px 0 10px; }
+  p { color:var(--muted); }
+  a { color:var(--accent); text-decoration:none; }
+  a:hover { text-decoration:underline; }
+  .card { background:var(--card); border-radius:14px; padding:22px 24px; margin:14px 0;
+          border:1px solid rgba(128,128,128,.12); }
+  .card b { display:block; margin-bottom:4px; }
+  footer { margin-top:56px; color:var(--muted); font-size:.85rem; }
+</style>
+</head>
+<body>
+<main>
+  <h1>Showcase</h1>
+  <p class="tag">Demo video maker for the Mac. Record your screen, polish it in minutes.</p>
+
+  <h2>Support</h2>
+  <div class="card">
+    <b>Questions, bugs, or ideas?</b>
+    <p>Write to <a href="mailto:ras.alungei@gmail.com">ras.alungei@gmail.com</a>. Every message is read and answered, usually within a couple of days.</p>
+  </div>
+
+  <h2>Frequently asked</h2>
+  <div class="card">
+    <b>Why does Showcase ask for Screen Recording permission?</b>
+    <p>It is the core of the app: recording your own screen. macOS requires you to grant it once in System Settings, Privacy &amp; Security.</p>
+  </div>
+  <div class="card">
+    <b>Why does it ask for Accessibility permission?</b>
+    <p>It is optional. While recording, Showcase timestamps your clicks and keystrokes so the editor can add click effects, typing sounds, and typing speed-ups afterwards. That data stays inside your project file, on your Mac. Recording works without it.</p>
+  </div>
+  <div class="card">
+    <b>Where are my projects stored?</b>
+    <p>As portable .showcase files on your Mac. You can copy them to another Mac and keep editing, and open them from File &gt; Open Recent or by double clicking.</p>
+  </div>
+
+  <h2>Privacy</h2>
+  <p>Showcase collects no data at all. Read the <a href="privacy.html">privacy policy</a>.</p>
+
+  <footer>© 2026 Ras Alungei</footer>
+</main>
+</body>
+</html>
