@@ -3,7 +3,7 @@
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<title>Showcase — Privacy Policy</title>
+<title>Screenie: Privacy Policy</title>
 <style>
   :root { --bg:#0e0f12; --card:#17181c; --fg:#f2f2f4; --muted:#9a9aa3; --accent:#a4eb3f; }
   @media (prefers-color-scheme: light) {
@@ -18,6 +18,7 @@
   h2 { font-size:1.1rem; margin:30px 0 8px; }
   p, li { color:var(--muted); }
   ul { padding-left:22px; }
+  li { margin-bottom:6px; }
   a { color:var(--accent); text-decoration:none; }
   footer { margin-top:56px; color:var(--muted); font-size:.85rem; }
 </style>
@@ -25,26 +26,38 @@
 <body>
 <main>
   <h1>Privacy Policy</h1>
-  <p class="tag">Showcase for macOS · Last updated July 2026</p>
+  <p class="tag">Screenie (formerly Showcase) for macOS · Last updated October 2026</p>
 
   <h2>The short version</h2>
-  <p>Showcase collects no data. There is no account, no sign-in, no analytics, no tracking, and no network communication. Everything you record and edit stays on your Mac.</p>
+  <p>We collect no data. Screenie has no account, no sign-in, no analytics, no ads and no tracking, and we have no servers. Everything you record and edit stays on your Mac. Two optional features can talk to a third-party service, and only after you add your own API key for it.</p>
 
   <h2>What the app stores locally</h2>
   <ul>
-    <li>Your screen recordings, saved as project files on your Mac.</li>
-    <li>Optionally, timestamps of your own clicks and keystrokes during a recording, used only to render click effects, typing sounds, and typing speed-ups in your video. This metadata lives inside the project file and never leaves your device.</li>
-    <li>Your app preferences (cursor style, sound choices, and similar), stored in the standard macOS preferences location.</li>
+    <li>Your screen recordings and, if you turn them on, your webcam footage and voice takes, saved as project files on your Mac.</li>
+    <li>Optionally, timestamps of your own clicks and typing during a recording, used only to render click effects, typing sounds and typing speed-ups in your video. This metadata lives inside the project file and never leaves your device.</li>
+    <li>Subtitles you generate, saved inside the project.</li>
+    <li>Your app preferences (cursor style, sound choices and similar) and any API keys you enter, stored on your Mac. The Gemini key is kept in the macOS Keychain.</li>
   </ul>
 
+  <h2>Optional features that use third-party services</h2>
+  <p>Nothing is sent anywhere unless you add your own key and use one of these features. Requests go directly from your Mac to the provider, under your own account with them. We never receive or see this data.</p>
+  <ul>
+    <li><b>Google Gemini</b> (AI Editor, naming a project, cleaning up subtitles): the request you type, a text description of your timeline (clip order, titles and settings), and, when you use them, your subtitle text or a few small still frames of the recording with its transcript. Handled under <a href="https://policies.google.com/privacy">Google's privacy policy</a> and the Gemini API terms.</li>
+    <li><b>ElevenLabs</b> (voice enhancement): the text transcript of the voice take you choose to enhance, used to generate the new voice audio. Handled under <a href="https://elevenlabs.io/privacy">ElevenLabs' privacy policy</a>.</li>
+  </ul>
+
+  <h2>Speech recognition</h2>
+  <p>Subtitles are made with the speech recognition built into macOS. On Macs that support it, transcription runs entirely on your device. Otherwise macOS may use Apple's speech recognition service, under <a href="https://www.apple.com/legal/privacy/">Apple's privacy policy</a>.</p>
+
   <h2>What we collect</h2>
-  <p>Nothing. Showcase sends no data to us or to anyone else. We have no servers.</p>
+  <p>Nothing. Screenie sends no data to us.</p>
 
   <h2>System permissions</h2>
   <ul>
     <li><b>Screen Recording</b>: required to record your screen. Granted and revocable in System Settings.</li>
-    <li><b>Microphone</b>: only if you choose to record your voice.</li>
-    <li><b>Accessibility</b>: optional, used to capture your own clicks and keystrokes as local metadata for editing effects.</li>
+    <li><b>Camera</b> and <b>Microphone</b>: optional, only if you choose to include your webcam or your voice.</li>
+    <li><b>Speech Recognition</b>: optional, only when you generate subtitles.</li>
+    <li><b>Accessibility</b>: optional, used to capture your own clicks and typing as local metadata for editing effects.</li>
   </ul>
 
   <h2>Changes and contact</h2>
